@@ -55,6 +55,5 @@ void FileHandler::writeResults(const ResultGradient& result, const ImageHeight h
         file << "\n";
     }
 
-    /* Close the file after writing */
     file.close();
 }
