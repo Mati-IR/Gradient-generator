@@ -3,7 +3,7 @@
 ## Overview
 
 This project provides a command-line application that generates a text
-file containing a color gradient matrix.\
+file containing a color gradient matrix.
 Each pixel is represented as a 16-bit RGB565 value, interpolated between
 four corner colors.
 
@@ -16,10 +16,10 @@ rendering the generated matrix as an image.
 program.exe <image_width> <image_height> <tl> <tr> <bl> <br> <output_path>
 ```
 
--   `<tl>` -- top-left pixel color\
--   `<tr>` -- top-right pixel color\
--   `<bl>` -- bottom-left pixel color\
--   `<br>` -- bottom-right pixel color\
+-   `<tl>` -- top-left pixel color
+-   `<tr>` -- top-right pixel color
+-   `<bl>` -- bottom-left pixel color
+-   `<br>` -- bottom-right pixel color
 -   Color values may be provided as **hex** (e.g., `0xf800`) or
     **decimal**.
 
@@ -33,8 +33,8 @@ program.exe 32 32 3000 6000 9000 12000 ./file.txt
 ## Output
 
 -   A text file containing a matrix of size
-    `<image_width> x <image_height>`\
--   Each pixel value in **hex**, space-separated per row\
+    `<image_width> x <image_height>`
+-   Each pixel value in **hex**, space-separated per row
 -   Linear interpolation ensures corners match the input colors
 
 Example (simplified):
@@ -45,10 +45,10 @@ Example (simplified):
 
 ## Color Format (RGB565)
 
--   **White**: `0xffff`\
--   **Black**: `0x0000`\
--   **Red**: `0xf800`\
--   **Green**: `0x07e0`\
+-   **White**: `0xffff`
+-   **Black**: `0x0000`
+-   **Red**: `0xf800`
+-   **Green**: `0x07e0`
 -   **Blue**: `0x001f`
 
 ## Visualization (visualize.py)
